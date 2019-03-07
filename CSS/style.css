@@ -1,0 +1,166 @@
+body{
+  font:15px/1.5 Arial,Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background:#f4f4f4;
+}
+/*Globally*/
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+/*Header*/
+header{
+  background:#35425a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:4px solid #e8491d;
+  
+}
+header h1{
+  margin-top:-5px;
+  
+  
+}
+header a{
+  text-decoration:none;
+  color:#ffffff;
+  text-transform:uppercase;
+  font-size:16px;
+  
+ 
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding:0 20px 0 20px;
+  
+  
+}
+
+header #branding{
+  float:left;
+    
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+header a:hover{
+  color:#e8491d;
+  
+}
+
+/*Showcase*/
+#showcase{
+  min-height:400px;
+  background:url('http://www.tokkoro.com/picsup/3089052-at-work_business_computer_design_desk_laptop_technology_workspace.jpg') no-repeat -40px;
+  background-size: auto;
+  text-align:center;
+}
+#showcase h1{
+  color:#ffffff;
+  margin-top:100px;
+  margin-bottom:10px;
+  font-size:45px;
+}
+#showcase p{
+  font-size:18px;
+  color:#ffffff;
+ 
+}
+#showcase h1:hover{
+    color:lightgreen;
+}
+
+/*Newsletter*/
+#newsletter{
+  background:#35425a;
+  color:#ffffff;
+  padding:15px;
+}
+#newsletter h1{
+  float:left;
+  
+}
+#newsletter form{
+  float:right;
+  margin-top:15px;
+}
+#newsletter input[type="email"]{
+  padding:10px;
+  margin-right:10px;
+  width:250px;
+}
+.button_1{
+  padding:12px;
+  background:#e8491d;
+  border:none; 
+}
+
+/*Boxes*/
+#boxes{
+  margin-top:20px;
+}
+#boxes .box{
+  float:left;
+  width:30%;
+  padding:10px;
+  text-align:center;
+}
+
+#boxes .box img{
+  width:90px;
+  padding:10px;
+}
+
+/*footer*/
+
+footer{
+  background:#35425a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-top:4px solid #e8491d;
+  text-align:center;
+}
+@media (max-width:768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  aside#sidebar,
+  article#mail-col{
+    float:none;
+    width:100%;
+    text-align:center;
+  }
+  header{
+    padding-bottom:20px;
+  }
+  #newsletter h1{
+    margin-top:40px;
+  }
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+  #newsletter form input[type="email"]{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
